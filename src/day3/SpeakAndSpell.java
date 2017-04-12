@@ -15,13 +15,20 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
+String word;
+word = " spell Weeeeeeeeee!";
+speak(word);
+String answer;
 		// 2. Catch the user's answer in a String
-
+answer = JOptionPane.showInputDialog(null, "Spell what you just heard!");
 		// 3. If the user spelled the word correctly, speak "correct"
-
+if (answer.equals(word)) {
+	speak("Halleluya");
+}
 		// 4. Otherwise say "wrong"
-
+else {speak("Wrong you are, my friend!");
+	
+}
 		// 5. repeat the process for other words
 		
 	}
